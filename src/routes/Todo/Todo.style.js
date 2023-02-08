@@ -48,7 +48,6 @@ export const TodoHeader = styled.div`
         }
     }
 `
-
 export const ToDoListGrid = styled.div`
     display: grid;
     border-radius: 1rem;

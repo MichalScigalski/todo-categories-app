@@ -1,6 +1,6 @@
-import TODOS from '../todos.json';
+// import TODOS from '../todos.json';
 
-const INIT_VALUE = TODOS;
+const INIT_VALUE = [];
 
 const todosReducer = (state = INIT_VALUE, action) => {
     switch (action.type) {
@@ -29,7 +29,6 @@ const todosReducer = (state = INIT_VALUE, action) => {
             return state.filter(category => category.id !== action.id);
         default:
             return state;
-        // throw new Error(`Unhandled type ${action.type} in todosReducer`);
     }
 }
 
