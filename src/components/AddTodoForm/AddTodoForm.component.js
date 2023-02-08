@@ -19,7 +19,7 @@ const AddTodoElement = ({ categoryId }) => {
     return (
         <AddTodoContainer>
             <form onSubmit={submitHandler}>
-                <input type="text" value={name} onChange={nameHandler} placeholder="Buy something..." />
+                <input type="text" required value={name} onChange={nameHandler} placeholder="Buy something..." />
                 <button type="submit">Add</button>
             </form>
         </AddTodoContainer>
