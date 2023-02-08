@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1175702141151,
+    "title": "Przykładowa lista",
+    "items": [
+      {
+        "id": 1175702141155,
+        "name": "Element pierwszy",
+        "isCompleted": false
+      },
+      {
+        "id": 1175702141156,
+        "name": "Element drugi",
+        "isCompleted": false
+      },
+      {
+        "id": 1175702141157,
+        "name": "Element trzeci",
+        "isCompleted": false
+      }
+    ]
+  },
+  {
+    "id": 1175702141551,
+    "title": "Lista zakupów",
+    "items": [
+      {
+        "id": 1175702141555,
+        "name": "Jajka 14szt.",
+        "isCompleted": true
+      },
+      {
+        "id": 1175702141556,
+        "name": "Mleko 2l swieze",
+        "isCompleted": false
+      },
+      {
+        "id": 1175702141557,
+        "name": "Czekolada milka",
+        "isCompleted": false
+      },
+      {
+        "id": 1175702141558,
+        "name": "Chipsy Lays",
+        "isCompleted": false
+      }
+    ]
+  },
+  {
+    "id": 1175702141552,
+    "title": "Lista filmow na wieczor",
+    "items": [
+      {
+        "id": 1175702141549,
+        "name": "Harry Potter",
+        "isCompleted": false
+      },
+      {
+        "id": 1175702141548,
+        "name": "Spiderman 3",
+        "isCompleted": false
+      },
+      {
+        "id": 1175702141547,
+        "name": "Shrek 2",
+        "isCompleted": false
+      }
+    ]
+  }
+]
