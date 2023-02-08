@@ -1,9 +1,8 @@
 import { useState } from "react";
 import CategoryTile from "../../components/CategoryTile/CategoryTile.component";
 import { CategoryListContainer, HeaderSection, CategoryGridContainer, CategoryInfoContainer } from "./Home.style";
-import AddCategory from "../../components/AddCategory/AddCategory.component";
+import AddCategory from "../../components/AddCategoryForm/AddCategoryForm.component";
 import { useSelector } from "react-redux";
-
 
 const Home = () => {
     const [isShowForm, setIsShowForm] = useState(false);

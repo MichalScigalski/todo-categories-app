@@ -1,6 +1,6 @@
-import { Navigate, useNavigate, useParams } from 'react-router-dom';
-import AddTodoElement from '../../components/AddTodoElement/AddTodoElement.component';
-import TodoElement from '../../components/TodoElement/TodoElement.component';
+import { Navigate, useNavigate, useParams, Link } from 'react-router-dom';
+import AddTodoForm from '../../components/AddTodoForm/AddTodoForm.component';
+import TodoElement from '../../components/TodoTile/TodoTile.component';
 import { ToDoListContainer, TodoHeader, ToDoListGrid } from './Todo.style';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeCategory } from '../../actions';
@@ -13,8 +13,10 @@ const Todo = () => {
     const currentCategory = todos.find(todo => todo.id.toString() === id);
 
     const deleteCategoryHandler = () => {
-        dispatch(removeCategory(currentCategory.id));
-        navigate('/');
+            if(window.confirm(`You want to remove category: ${currentCategory.title}?`)) {
+                dispatch(removeCategory(currentCategory.id));
+                navigate('/');
+            }
     }
 
     return (
@@ -22,10 +24,11 @@ const Todo = () => {
             {currentCategory ?
                 <ToDoListContainer>
                     <TodoHeader>
-                        <h1>{currentCategory.title}</h1>
+                        <Link to={'/'}>{currentCategory.title}</Link>
+                        {/* <h1>{currentCategory.title}</h1> */}
                         <button onClick={deleteCategoryHandler} />
                     </TodoHeader >
-                    <AddTodoElement categoryId={currentCategory.id} />
+                    <AddTodoForm categoryId={currentCategory.id} />
                     <ToDoListGrid>
                         {currentCategory.items.map((item, _key) =>
                             <TodoElement

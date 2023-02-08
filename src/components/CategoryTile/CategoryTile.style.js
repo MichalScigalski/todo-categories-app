@@ -21,6 +21,7 @@ export const CategoryTileContainer = styled.div`
         color: white;
         font-size: 20px;
         margin: 0;
+        word-wrap: break-word;
     }
 
     &::before {

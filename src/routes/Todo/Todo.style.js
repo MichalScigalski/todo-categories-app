@@ -6,13 +6,18 @@ export const ToDoListContainer = styled.div`
 `
 
 export const TodoHeader = styled.div`
-    margin: 0 2rem;
+    margin: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    h1 {
+    a {
         color: white;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 700;
+        word-wrap: break-word;
+        max-width: 400px;
     }
 
     button {

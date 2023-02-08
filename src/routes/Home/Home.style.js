@@ -10,7 +10,6 @@ export const CategoryGridContainer = styled.div`
 export const CategoryListContainer = styled.div`
     max-width: 800px;
     margin: auto;
-
 `
 
 export const CategoryInfoContainer = styled.div`
@@ -19,8 +18,6 @@ export const CategoryInfoContainer = styled.div`
     height: 40vh;
     text-align: center;
     margin: 3rem 10%;
-    
-
 `
 
 export const HeaderText = styled.h1`
@@ -48,23 +45,20 @@ export const HeaderSection = styled.div`
         cursor: pointer;
         border: none;
         
-        &.breathing {
-            animation: breath 3s infinite;
-
-            @keyframes breath {
-            0% {
-                box-shadow: none;
-            }
-            50% {
-                box-shadow: 1px 1px 10px 5px  #2F67DD;
-            }
-            100% {
-                box-shadow: none;
+            &.breathing {
+                animation: breath 3s infinite;
+                @keyframes breath {
+                0% {
+                    box-shadow: none;
+                }
+                50% {
+                    box-shadow: 1px 1px 10px 5px  #2F67DD;
+                }
+                100% {
+                    box-shadow: none;
+                }
             }
         }
-        }
-        
-        
 
         &::before {
             content: '+'; 

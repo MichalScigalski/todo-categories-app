@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { AddCategoryContainer } from './AddCategory.style';
+import { AddCategoryContainer } from './AddCategoryForm.style';
 import { addCategory } from '../../actions';
 
 const AddCategory = ({ showToggle}) => {
@@ -12,6 +12,10 @@ const AddCategory = ({ showToggle}) => {
     }
     const submitHandler = e => {
         e.preventDefault();
+        if(title.length>30) {
+            setTitle('');
+            return alert('Name of list is too long!');
+        }
         dispatch(addCategory(title));
         showToggle();
     }

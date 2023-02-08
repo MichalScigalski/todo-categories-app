@@ -1,4 +1,4 @@
-import { TodoElementContainer, TodoElementBtn } from './TodoElement.style';
+import { TodoElementContainer, TodoElementBtn } from './TodoTile.style';
 import { toggleItem } from '../../actions';
 import { useDispatch } from 'react-redux';
 
