@@ -21,6 +21,7 @@ export const HeaderSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1rem;
     
     h1 {
@@ -30,13 +31,18 @@ export const HeaderSection = styled.div`
     button {
         background: #2F67DD;
         color: white;
-        height: 50px;
-        width: 50px;
-        font-size: 40px;
-        text-align: center;
-        vertical-align: center;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         cursor: pointer;
         border: none;
+
+        &::before {
+            content: '+'; 
+            color: #fff;
+            font-size: 30px;
+            font-weight: 300;
+            font-family: Arial, sans-serif;
+        }
     }
 `

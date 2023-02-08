@@ -14,7 +14,7 @@ const Home = () => {
         <CategoryListContainer>
             <HeaderSection>
                 <h1>Your lists</h1>
-                <button onClick={ShowFormHandler}>+</button>
+                <button onClick={ShowFormHandler}></button>
             </HeaderSection>
             { isShowForm && <AddCategory showToggle={ShowFormHandler}/>}
             <CategoryGridContainer>

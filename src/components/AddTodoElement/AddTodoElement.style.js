@@ -18,13 +18,16 @@ export const AddTodoContainer = styled.div`
         gap: 4px;
         color: white;
 
+        @media (max-width: 330px) {
+            flex-direction: column;
+        }
+
         input,button {
             padding: 0.5rem 1rem;
             border-radius: 2px;
         }
 
         input {
-            padding: 0.5rem 1rem;
             outline: none;
             border-radius: 4px;
             border-color: #2F67DD;

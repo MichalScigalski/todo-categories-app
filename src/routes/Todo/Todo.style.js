@@ -6,10 +6,10 @@ export const ToDoListContainer = styled.div`
 `
 
 export const TodoHeader = styled.div`
+    margin: 0 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
 
     h1 {
         color: white;
@@ -18,12 +18,11 @@ export const TodoHeader = styled.div`
     button {
         background: #EA7B58;
         border: none;
-        width: 40px;
-        height: 40px;
+        min-width: 40px ;
+        min-height: 40px ;
         border-radius: 50%;
         cursor: pointer;
         font-weight: bold;
-        font-size: 20px;
         position: relative;
 
         &::before, &::after {
