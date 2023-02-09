@@ -45,26 +45,5 @@
         "isCompleted": false
       }
     ]
-  },
-  {
-    "id": 1175702141552,
-    "title": "Move list for tomorrow",
-    "items": [
-      {
-        "id": 1175702141549,
-        "name": "Harry Potter",
-        "isCompleted": false
-      },
-      {
-        "id": 1175702141548,
-        "name": "Spiderman 3",
-        "isCompleted": false
-      },
-      {
-        "id": 1175702141547,
-        "name": "Shrek 2",
-        "isCompleted": false
-      }
-    ]
   }
 ]

@@ -8,47 +8,26 @@ export const ToDoListContainer = styled.div`
 export const TodoHeader = styled.div`
     margin: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 1rem;
     align-items: center;
-
-    a {
+    h1 {
         color: white;
-        text-decoration: none;
-        font-size: 32px;
-        font-weight: 700;
         word-wrap: break-word;
-        max-width: 400px;
+        width: 80%;
+        margin: 0;
     }
-
-    button {
-        background: #EA7B58;
-        border: none;
-        min-width: 40px ;
-        min-height: 40px ;
+    a {
+        min-width: 40px;
+        min-height: 40px;
         border-radius: 50%;
+        display: grid;
+        place-items: center;
+        border: none;
+        background: #F0A500;
         cursor: pointer;
-        font-weight: bold;
-        position: relative;
-
-        &::before, &::after {
-            position: absolute;
-            bottom: 8px;
-            left: 47%;
-            content: ' ';
-            height: 23px;
-            width: 2px;
-            background-color: #333;
-        }
-
-        &::before {
-        transform: rotate(45deg);
-        }
-        &::after {
-        transform: rotate(-45deg);
-        }
 
         &:hover {
-            box-shadow: 1px 1px 5px -1px black;
             filter: brightness(1.1);
         }
     }
@@ -58,4 +37,37 @@ export const ToDoListGrid = styled.div`
     border-radius: 1rem;
     gap: 1rem;
     margin: 0 1rem;
+`
+
+export const BackIcon = styled.div`
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &::after{
+    position: absolute;
+    display: block;
+    content: "";
+    color: white;
+    width: 18px;
+    height: 15px;
+    left: 3px;
+    top: -1px;
+    border-bottom: solid 2px;
+    transform: translatex(4px);
+    }
+    &::before{
+    position: absolute;
+    display: block;
+    content: "";
+    color: white;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px;
+    border-left: solid 2px;
+    top: 50%;
+    left: 5px;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    }
 `

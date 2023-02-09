@@ -1,6 +1,6 @@
-// import TODOS from '../todos.json';
+import TODOS from '../todos.json';
 
-const INIT_VALUE = [];
+const INIT_VALUE = TODOS;
 
 const todosReducer = (state = INIT_VALUE, action) => {
     switch (action.type) {

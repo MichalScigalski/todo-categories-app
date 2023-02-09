@@ -17,10 +17,7 @@ export const AddTodoContainer = styled.div`
         align-items: stretch;
         gap: 4px;
         color: white;
-
-        @media (max-width: 330px) {
-            flex-direction: column;
-        }
+        flex-wrap: wrap;
 
         input,button {
             padding: 0.5rem 1rem;

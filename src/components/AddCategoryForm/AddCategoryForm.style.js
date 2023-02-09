@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const AddCategoryContainer = styled.div`
-    $primary: #11998e;
-    $secondary: #38ef7d;
     background: linear-gradient(45deg, #232229, #19181d);
     border-top: 4px solid #2F67DD;
     display: grid;
@@ -11,6 +9,7 @@ export const AddCategoryContainer = styled.div`
     border-radius: 8px;
     max-width: 300px;
     margin: 2rem auto;
+
     form {
         display: flex;
         justify-content: center;
@@ -38,7 +37,6 @@ export const AddCategoryContainer = styled.div`
                 outline: none;
             }
         }
-
 
         button {
             background: #2F67DD;
