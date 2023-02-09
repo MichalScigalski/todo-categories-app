@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AddCategoryContainer = styled.div`
     background: linear-gradient(45deg, #232229, #19181d);
-    border-top: 4px solid #2F67DD;
+    border-top: 2px solid #2F67DD;
     display: grid;
     place-items: center;
     padding: 2rem 1rem;
