@@ -3,18 +3,20 @@ import { CategoryTileContainer, CategoryTileHeader, CategoryTileRemove } from '.
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { removeCategory } from '../../actions';
+import { useConfirm } from 'material-ui-confirm';
 
 const CategoryTile = ({ category }) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const NavigateHandler = () => navigate('/todo/'+category.id);
+    const confirm = useConfirm();
+    const NavigateHandler = () => navigate('/todo/' + category.id);
 
     const deleteCategoryHandler = e => {
         e.stopPropagation();
-        if(window.confirm(`You want to remove category: ${category.title}?`)) {
-            dispatch(removeCategory(category.id));
-            navigate('/');
-        }
+        confirm({ title: '', description: `Are you sure you want to remove list: ${category.title}` })
+            .then(() => {
+                dispatch(removeCategory(category.id));
+            })
     }
 
     return (
