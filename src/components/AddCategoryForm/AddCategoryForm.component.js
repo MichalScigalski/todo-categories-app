@@ -14,7 +14,7 @@ const AddCategory = ({ showToggle}) => {
         e.preventDefault();
         if(title.length>30) {
             setTitle('');
-            return alert('Name of list is too long!');
+            return alert('Nazwa listy jest za długa!');
         }
         dispatch(addCategory(title));
         showToggle();
@@ -23,9 +23,9 @@ const AddCategory = ({ showToggle}) => {
     return (
         <AddCategoryContainer>
             <form onSubmit={submitHandler}>
-                <label>List name</label>
-                <input required type="text" value={title} onChange={titleHandler} placeholder="Shopping" />
-                <button type="submit">Create</button>
+                <label>Nazwa listy</label>
+                <input required type="text" value={title} onChange={titleHandler} placeholder="Zakupy" />
+                <button type="submit">Utwórz</button>
             </form>
         </AddCategoryContainer>
     )
