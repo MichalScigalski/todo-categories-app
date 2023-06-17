@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <CategoryListContainer>
             <HeaderSection>
-                <h1>Twoje listy</h1>
+                <h1>Your lists</h1>
                 <button onClick={ShowFormHandler} className={todos.length === 0 && 'breathing'}/>
             </HeaderSection>
             {isShowForm && <AddCategory showToggle={ShowFormHandler} />}
@@ -21,7 +21,7 @@ const Home = () => {
                     {todos.map((category, _key) => <CategoryTile key={_key} category={category} />)}
                 </CategoryGridContainer> :
                 <CategoryInfoContainer>
-                    <p>You nie masz żadnych list, <br /> stwórz nową klikając powyższy przycisk.</p>
+                    <p>You don't have any todo-lists, <br /> create a new one by clicking on blue button above.</p>
                 </CategoryInfoContainer>
             }
         </CategoryListContainer>

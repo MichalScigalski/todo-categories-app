@@ -13,11 +13,7 @@ const CategoryTile = ({ category }) => {
 
     const deleteCategoryHandler = e => {
         e.stopPropagation();
-        confirm({ 
-            title: '', 
-            description: `Chcesz usunąć listę: ${category.title}`,
-            confirmationText: 'Tak',
-            cancellationText: 'Anuluj' })
+        confirm({ title: '', description: `Are you sure you want to remove list: ${category.title}` })
             .then(() => {
                 dispatch(removeCategory(category.id));
             })
@@ -27,7 +23,7 @@ const CategoryTile = ({ category }) => {
         <CategoryTileContainer onClick={NavigateHandler}>
             <CategoryTileHeader >
                 <h1>{category.title}</h1>
-                <span>{category.items.length} zadań</span>
+                <span>{category.items.length} tasks</span>
             </CategoryTileHeader>
             <CategoryTileRemove onClick={deleteCategoryHandler} />
         </CategoryTileContainer>
