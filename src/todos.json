@@ -1,47 +1,47 @@
 [
   {
     "id": 1175702141151,
-    "title": "Example list",
+    "title": "Przykładowa lista",
     "items": [
       {
         "id": 1175702141155,
-        "name": "First example",
+        "name": "Pierwsze zadanie",
         "isCompleted": false
       },
       {
         "id": 1175702141156,
-        "name": "Second example",
+        "name": "Drugie zadanie",
         "isCompleted": false
       },
       {
         "id": 1175702141157,
-        "name": "Third example",
+        "name": "Trzecie zadanie",
         "isCompleted": false
       }
     ]
   },
   {
     "id": 1175702141551,
-    "title": "Shopping list",
+    "title": "Lista zakupów",
     "items": [
       {
         "id": 1175702141555,
-        "name": "Eggs",
+        "name": "Jajka",
         "isCompleted": true
       },
       {
         "id": 1175702141556,
-        "name": "Milk 2L",
+        "name": "Mleko 2L",
         "isCompleted": false
       },
       {
         "id": 1175702141557,
-        "name": "Chocolate",
+        "name": "Czekolada",
         "isCompleted": false
       },
       {
         "id": 1175702141558,
-        "name": "Lays crisp",
+        "name": "Chipsy",
         "isCompleted": false
       }
     ]
